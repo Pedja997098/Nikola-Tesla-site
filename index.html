@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Никола Тесла - Живот и дело</title>
+    <style>
+        /* Општи стилови */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #005f73;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #0a9396;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #e9d8a6;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background: #94d2bd;
+            color: #005f73;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #005f73;
+            border-bottom: 2px solid #0a9396;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        /* Биографија */
+        .biography {
+            font-size: 1.1rem;
+            background: #e9d8a6;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Фотографије */
+        .photos {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photos img {
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .photos img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Одломци / цитати */
+        .quotes blockquote {
+            font-style: italic;
+            background: #94d2bd;
+            padding: 15px 20px;
+            border-left: 6px solid #0a9396;
+            margin: 10px 0;
+            border-radius: 5px;
+            color: #001219;
+        }
+
+        /* Занимљивости */
+        .fun-facts ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Футер */
+        footer {
+            background: #005f73;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Респонзивност */
+        @media (max-width: 700px) {
+            .photos img {
+                width: 90%;
+                max-width: 320px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                padding: 12px 10px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Никола Тесла</h1>
+    </header>
+
+    <nav>
+        <a href="#biografija">Биографија</a>
+        <a href="#fotografije">Фотографије</a>
+        <a href="#odlomci">Цитати и одломци</a>
+        <a href="#zanimljivosti">Занимљивости</a>
+    </nav>
+
+    <main>
+        <section id="biografija">
+            <h2>Биографија</h2>
+            <p class="biography">
+                Никола Тесла (10. јул 1856 – 7. јануар 1943) је био српски и амерички проналазач, инжењер, физичар и футуриста.
+                Познат је по свом доприносу развоју наизменичне струје, индукционог мотора, Теслиног трансформатора и бројних других технологија.
+                Рођен је у селу Смедерево, у тадашњој Аустроугарској, а већи део живота провео је у Сједињеним Америчким Државама.
+            </p>
+        </section>
+
+        <section id="fotografije">
+            <h2>Фотографије</h2>
+            <div class="photos">
+    <img src="slike/tesla1.jpg" alt="tesla1" />
+    <img src="slike/tesla2.jpg" alt="tesla2" />
+    <img src="slike/tesla3.jpg" alt="tesla3" />
+</div>
+        </section>
+
+        <section id="odlomci" class="quotes">
+            <h2>Цитати и одломци из дела</h2>
+            <blockquote>
+                „Ако желите да пронађете тајне универзума, мислите у терминима енергије, фреквенције и вибрације.“
+            </blockquote>
+            <blockquote>
+                „Наука није ништа више од перцепције и свести у покушају да схвати тајне природе.“
+            </blockquote>
+            <blockquote>
+                „Будућност ће показати резултате и судити о свему.“
+            </blockquote>
+        </section>
+
+        <section id="zanimljivosti" class="fun-facts">
+            <h2>Занимљивости из живота</h2>
+            <ul>
+                <li>Никола Тесла је тврдио да говори 8 језика.</li>
+                <li>Имао је фотографску меморију и умео је да ради сложене прорачуне у глави.</li>
+                <li>Никола Тесла је спавао само 2 до 3 сата дневно.</li>
+                <li>Патентирао је више од 300 изума.</li>
+                <li>Његов рад је темељ савремене електроенергетске индустрије.</li>
+                <li>Покушавао је да развије безжични пренос енергије за цео свет.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Никола Тесла - Сајт у част великог научника
+    </footer>
+</body>
+</html>
